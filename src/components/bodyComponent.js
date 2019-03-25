@@ -10,12 +10,28 @@ class Body extends Component {
   render() {
     return (
         
-      <div className="bodyContent">
+      <div >
+      <div className="introduction">
+       <div className="container">
+       
+       <div className="row justify-content-center">
+       <div className="col-12">
+          <h1> Hello my name is Josh </h1>
+          </div>
+          </div>
+          <div className="row justify-content-center">
+          <div className="col-12">
+          <h5> I am a full stack developer that enjoys
+              making websites that are intuitive and are well pleasing 
+              to the eye </h5>
+              </div>
+              </div>
 
-      
+       </div>
+      </div>
 
-
-        <div className="container">
+        <div className="bodyContent">
+        <div className="container ">
         <div className="row justify-content-center">
         
         <div className="col-6">
@@ -43,7 +59,7 @@ class Body extends Component {
        
         </div>
     
-        
+        </div>
         </div>
     </div>
     

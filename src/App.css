@@ -33,11 +33,15 @@ img{
   height: auto;
   display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    
+   border:5px solid #4a6f9a;
   
 }
-.hello {
-  width: 100%;
+
+.introduction {
+  
+ background-color: white;
   height: 100%;
-  background-color: orange;
+  
 }
