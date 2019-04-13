@@ -1,8 +1,23 @@
 .App {
   text-align: center;
 }
+body {
+  height: 100%;
+   background:url('./shared/me.jpg');
+    background-attachment:fixed; 
+   
+}
 
-
+ html {
+  height: 100%;
+}
+.content {
+  display: table-cell;
+  vertical-align: middle;
+}
+.intro {
+  height: 90vh;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -39,9 +54,6 @@ img{
   
 }
 
-.introduction {
-  
- background-color: white;
-  height: 100%;
-  
-}
+
+
+
