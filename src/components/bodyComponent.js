@@ -10,11 +10,12 @@ class Body extends Component {
   render() {
     return (
         
-      <div className="intro" >
+      <div id="full-screen" >
       
        <div className="container">
-       
+       <div className="introduction">
        <div className="row justify-content-center">
+       
       
           <h1> Hello my name is Josh </h1>
           
@@ -23,17 +24,35 @@ class Body extends Component {
               to the eye </h5>
               
               </div>
+              </div>
 
        </div>
-
+       <div className= "about">
        <div className="container">
-       <Card>
-         <CardBody>
-       <CardTitle>hey</CardTitle>
-       </CardBody>
-       </Card>
+       
+       <div className="row">
+       <h1> A little about me... </h1>
+         
       </div>
       </div>
+      </div>
+      <div className="container">
+       <div className="introduction">
+       <div className="row justify-content-center">
+       
+      
+          <h1> Hello my name is Josh </h1>
+          
+          <h5> I am a full stack developer that enjoys
+              making websites that are intuitive and are well pleasing 
+              to the eye </h5>
+              
+              </div>
+              </div>
+
+       </div>
+      </div>
+      
      
         
     
