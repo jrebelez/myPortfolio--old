@@ -28,7 +28,7 @@ class Header extends Component {
                 <NavLink href="#skills">Skills</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="">Contact</NavLink>
+                <NavLink href="#contact">Contact</NavLink>
               </NavItem>
               
             </Nav>
