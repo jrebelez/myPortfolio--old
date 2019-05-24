@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
-import {Navbar, NavbarBrand, Nav, NavItem, NavLink, 
+import {Navbar,NavbarToggler, NavbarBrand, Nav, NavItem, NavLink,Collapse
 } from 'reactstrap';
+import logo from '../shared/siglogo.png';
 
 class Header extends Component {
   constructor(props) {
     super(props);
+
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      isOpen: false
+    };
 
   }
   toggle() {
@@ -16,23 +22,23 @@ class Header extends Component {
   render() {
     return (
 <div>
-        <Navbar style={{backgroundColor: '#4a6f9a'}} light expand="md">
-          <NavbarBrand href="#intro">Josh Rebelez</NavbarBrand>
-         
-        
+        <Navbar style={{backgroundColor: '#874a9a'}} light expand="md">
+          <NavbarBrand href="#intro"><img src={logo} width="200px" height="auto"/></NavbarBrand>
+           <NavbarToggler onClick={this.toggle} />
+           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="#aboutme">About</NavLink>
+                <NavLink href="#skills">Skills</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#skills">Skills</NavLink>
+                <NavLink href="">Projects</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="#contact">Contact</NavLink>
               </NavItem>
               
             </Nav>
-        
+        </Collapse>
         </Navbar>
       </div>
     );

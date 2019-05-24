@@ -1,109 +1,64 @@
 import React, { Component } from "react";
-import { Button, Form, FormGroup, Label, Input, Col } from "reactstrap";
-
+import {  Container} from "reactstrap";
+import bootstrap from "../shared/bootstrap.png";
+import angular from "../shared/angular.png";
+import react from "../shared/react.svg";
+import node from "../shared/nodejs.png";
 
 class Body extends Component {
   constructor(props) {
     super(props);
-    this.handleSubmit = this.handleSubmit.bind(this);
+    
   }
-  handleSubmit(values){
-    console.log('Current State is: ' + JSON.stringify(values));
-    alert('Current State is: ' + JSON.stringify(values));
-    this.props.postFeedback(values.name, values.email, values.text);
-    
-    
-}
+  
 
   render() {
     return (
         
-      <div id="full-screen" >
+      <div>
       
-       <div className="container">
-       <div id="into" className="introduction">
-       <div className="row justify-content-center">
-       
-      
-          <h1> Hello my name is Josh Rebelez </h1>
-          <h3> I am a Full-Stack Web Developer! </h3>
-          
-              </div>
-              </div>
-
+       <Container>
+       <div id="intro" className="introduction">
+       <div className="row h-100 align-items-center justify-content-center text-center">
+       <div className="col-lg-10 align-self-end">
+       <h1 className="text-uppercase text-white font-weight-bold">Josh Rebelez </h1>
        </div>
-       <div id="aboutme" className="about">
-       <div className="container">
-       
-       <div className="row">
-       <h1> A little about me... </h1>
-       <div className="row">
-       <div className="col-6">
-      <p> I have recently graduated from Nucamp coding bootcamp in Tacoma, Wa. I have enjoyed learning new 
-        concepts and technologies. With this new knowledge I am eager to continue my education in real world 
-        experience to make me a more refined developer! </p>
-      </div>
-      <div className="col-6 ">
-
-        <img className=" rounded" src= {require('../shared/me.jpg')} alt="Josh Rebelez" />
-        </div>
-      </div>
-       
-         
-      </div>
-      </div>
-      </div>
-     <div className="myskills">
-      <div className="container">
-       <div id="skills" >
-       <div className="row">
-       <div className="col-6 ">
-          <h1> Here is some of my skills... </h1>
+       <div className="col-lg-8 align-self-baseline">
+          <p className="text-white font-weight-light ">Full-Stack Web Developer</p>
+          <a className="btn btn-primary btn-xl js-scroll-trigger" href="#skills">See My Skills</a>
+        
+       </div>
+       </div>
 </div>
-       </div>   
-<div className="row">
-          <ul>
-            <li><img src= {require('../shared/bootstrap-solid.svg')} alt="Bootstrap" /> </li>
-            <li> <img src= {require('../shared/react.svg')} alt="React" /> </li>
-            <li> <img src= {require('../shared/angular.png')} alt="Angular" /> </li>
-            <li> React Native </li>
-            <li> <img src= {require('../shared/nodejs.png')} alt="Nodejs" /> </li>
-            </ul>
-             </div> 
-              </div>
-              </div>
-
-       </div>
-       <div id="contact" className="about">
-       <div className="container">
-       <Form onSubmit={(values) => this.handleSubmit(values)}>
-       <FormGroup row>
-          <Label for="Name" sm={2}>Name</Label>
-          <Col sm={10}>
-            <Input type="Name" name="Name" id="Name" placeholder="Your Name" />
-          </Col>
-        </FormGroup>
-        <FormGroup row>
-          <Label for="exampleEmail" sm={2}>Email</Label>
-          <Col sm={10}>
-            <Input type="email" name="email" id="exampleEmail" placeholder="Your Email" />
-          </Col>
-        </FormGroup>
-        <FormGroup row>
-          <Label for="exampleText" sm={2}>Your Feedback</Label>
-          <Col sm={10}>
-            <Input type="textarea" name="text" id="exampleText"placeholder="Your Feedback" />
-          </Col>
-        </FormGroup>
-        <FormGroup check row>
-          <Col sm={{ size: 10, offset: 2 }}>
-            <Button>Submit</Button>
-          </Col>
-        </FormGroup>
-      </Form>
-    
+       </Container>
        
+     <div className="myskills">
+      <Container>
+       <div id="skills" >
+       <div className="row h-100 align-items-center justify-content-center text-center">
+       <div className="col-lg-10 align-self-end">
+       <h1 className=" font-weight-bold">Here is some Tech I'm familiar with </h1>
        </div>
+       </div>
+
+       <div className="row align-items-start">
+       <div className="col-12 col-md  m-1">
+      <img src={bootstrap} width="150px" height="150px"/>
+       </div>
+       <div className="col-12 col-md  m-1">
+      <img src={angular} width="150px" height="150px"/>
+       </div>
+       <div className="col-12 col-md m-1">
+      <img src={react} width="150px" height="150px"/>
+       </div>
+       <div className="col-12 col-md m-1">
+      <img src={node} width="150px" height="150px"/>
+       </div>
+       </div>
+             
+              </div>
+              </Container>
+
        </div>
        </div>
       
