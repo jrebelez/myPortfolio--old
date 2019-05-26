@@ -25,11 +25,18 @@ body {
 }
 .myskills{
   background-color: white;
-  background-attachment:fixed; 
-    background-repeat: no-repeat;
-  padding-top: 10%;
+  padding-top: 5%;
   padding-bottom: 10%;
 }
+
+.myportfolio{
+  
+    background-color: #9a694a;
+    padding-top: 5%;
+    padding-bottom: 10%;
+  
+}
+
 #full-screen {
   min-height: 100vh;
  }
@@ -52,6 +59,15 @@ code {
 .bodyContent {
   background-color: #99CED4;
 }
+
+
+.box{
+	width:1300px;
+  height:200px;
+  background-color: #4a6f9a;
+  opacity: 0.9;
+}
+ 
 
 
 

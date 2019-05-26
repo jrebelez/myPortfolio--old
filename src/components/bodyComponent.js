@@ -25,7 +25,7 @@ class Body extends Component {
        </div>
        <div className="col-lg-8 align-self-baseline">
           <p className="text-white font-weight-light ">Full-Stack Web Developer</p>
-          <a className="btn btn-primary btn-xl js-scroll-trigger" href="#skills">See My Skills</a>
+         
         
        </div>
        </div>
@@ -42,16 +42,17 @@ class Body extends Component {
        </div>
 
        <div className="row align-items-start">
-       <div className="col-12 col-md  m-1">
+       <div className="col-md-3 col-sm-6 col-6">
       <img src={bootstrap} width="150px" height="150px"/>
+       
        </div>
-       <div className="col-12 col-md  m-1">
+       <div className="col-md-3 col-sm-6 col-6">
       <img src={angular} width="150px" height="150px"/>
        </div>
-       <div className="col-12 col-md m-1">
+       <div className="col-md-3 col-sm-6 col-6">
       <img src={react} width="150px" height="150px"/>
        </div>
-       <div className="col-12 col-md m-1">
+       <div className="col-md-3 col-sm-6 col-6">
       <img src={node} width="150px" height="150px"/>
        </div>
        </div>
@@ -59,6 +60,21 @@ class Body extends Component {
               </div>
               </Container>
 
+       </div>
+
+       <div className="myportfolio">
+       <div className="container">
+       <div className="row h-100 align-items-center justify-content-center text-center">
+       <div className="col-lg-10 align-self-end">
+       <h1 className=" font-weight-bold text-white">My Portfolio</h1>
+       </div>
+       </div>
+       <div className="row">
+       <div className="box"> 
+       <p className="text-center" > Currently Building... </p>
+       </div>
+       </div>
+       </div>
        </div>
        </div>
       
