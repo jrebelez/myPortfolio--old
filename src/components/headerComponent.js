@@ -23,7 +23,7 @@ class Header extends Component {
     return (
 <div>
         <Navbar style={{backgroundColor: '#874a9a'}} light expand="md">
-          <NavbarBrand href="#intro"><img src={logo} width="200px" height="auto"/></NavbarBrand>
+          <NavbarBrand href="#intro"><img src={logo} width="200px" height="auto" alt="Josh Rebelez"/></NavbarBrand>
            <NavbarToggler onClick={this.toggle} />
            <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
@@ -31,7 +31,7 @@ class Header extends Component {
                 <NavLink href="#skills">Skills</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="">Projects</NavLink>
+                <NavLink href="#portfolio">Projects</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="#contact">Contact</NavLink>

@@ -31,7 +31,8 @@ body {
 
 .myportfolio{
   
-    background-color: #9a694a;
+  background:url('./shared/projects.jpg');
+  background-repeat: no-repeat;
     padding-top: 5%;
     padding-bottom: 10%;
   
