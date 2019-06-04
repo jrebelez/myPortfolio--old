@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Navbar,NavbarToggler, NavbarBrand, Nav, NavItem, NavLink,Collapse
 } from 'reactstrap';
 import logo from '../shared/siglogo.png';
+import { white } from '../../node_modules/ansi-colors';
 
 class Header extends Component {
   constructor(props) {
@@ -28,13 +29,13 @@ class Header extends Component {
            <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="#skills">Skills</NavLink>
+                <NavLink style={{color: 'white'}} href="#skills" >Skills</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#portfolio">Projects</NavLink>
+                <NavLink style={{color: 'white'}} href="#portfolio">Projects</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#contact">Contact</NavLink>
+                <NavLink style={{color: 'white'}} href="#contact">Contact</NavLink>
               </NavItem>
               
             </Nav>
